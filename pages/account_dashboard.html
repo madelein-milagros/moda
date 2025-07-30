@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Cuenta - ModaVibe</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Gestiona tu cuenta ModaVibe, revisa pedidos, actualiza preferencias y descubre recomendaciones personalizadas." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmodavibe1425back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-source">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center">
+                        <svg class="h-8 w-auto text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <path d="M10 5h8l6 15 6-15h8L28 35h-6L10 5zm25 0h6v30h-6V5zm15 0h12c6 0 10 4 10 10s-4 10-10 10h-6v10h-6V5zm6 6v8h6c2 0 4-1 4-4s-2-4-4-4h-6zm20-6h20v6H82v6h12v6H82v6h14v6H76V5z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-semibold text-secondary">ModaVibe</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Mujer</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Hombre</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Niños</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Accesorios</a>
+                        <a href="style_guide_hub.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Estilo</a>
+                    </div>
+                </div>
+
+                <!-- Right Side Icons -->
+                <div class="flex items-center space-x-4">
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <a href="account_dashboard.html" class="text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </a>
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                    <a href="checkout_experience.html" class="text-text-primary hover:text-accent transition-colors duration-300 relative">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                        <span class="absolute -top-2 -right-2 bg-accent text-secondary text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Account Dashboard Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <!-- Welcome Section -->
+        <div class="mb-8">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between">
+                <div class="mb-4 md:mb-0">
+                    <h1 class="text-display font-inter font-semibold text-secondary mb-2">Hola, María</h1>
+                    <p class="text-text-secondary">Bienvenida de vuelta a tu espacio personal ModaVibe</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <div class="bg-accent bg-opacity-20 px-4 py-2 rounded-full">
+                        <span class="text-secondary font-medium">Miembro VIP</span>
+                    </div>
+                    <div class="text-right">
+                        <p class="text-sm text-text-secondary">Puntos ModaVibe</p>
+                        <p class="text-lg font-semibold text-secondary">1,250</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dashboard Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column - Main Content -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- Quick Actions -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <h2 class="text-heading font-inter font-semibold text-secondary mb-6">Acciones Rápidas</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <button class="flex flex-col items-center p-4 bg-surface rounded-lg hover:bg-accent hover:bg-opacity-20 transition-colors duration-300">
+                            <svg class="h-8 w-8 text-accent mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                            </svg>
+                            <span class="text-sm font-medium text-secondary">Mis Pedidos</span>
+                        </button>
+                        <button class="flex flex-col items-center p-4 bg-surface rounded-lg hover:bg-accent hover:bg-opacity-20 transition-colors duration-300">
+                            <svg class="h-8 w-8 text-accent mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span class="text-sm font-medium text-secondary">Lista de Deseos</span>
+                        </button>
+                        <button class="flex flex-col items-center p-4 bg-surface rounded-lg hover:bg-accent hover:bg-opacity-20 transition-colors duration-300">
+                            <svg class="h-8 w-8 text-accent mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span class="text-sm font-medium text-secondary">Tallas y Ajuste</span>
+                        </button>
+                        <button class="flex flex-col items-center p-4 bg-surface rounded-lg hover:bg-accent hover:bg-opacity-20 transition-colors duration-300">
+                            <svg class="h-8 w-8 text-accent mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            <span class="text-sm font-medium text-secondary">Configuración</span>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Recent Orders -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-heading font-inter font-semibold text-secondary">Pedidos Recientes</h2>
+                        <a href="javascript:void(0)" class="text-accent font-medium hover:text-secondary transition-colors duration-300">Ver todos</a>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <!-- Order 1 -->
+                        <div class="border border-border-light rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div>
+                                    <p class="font-medium text-secondary">Pedido #MV-2025-0847</p>
+                                    <p class="text-sm text-text-secondary">28 de julio, 2025</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-semibold text-secondary">€156,00</p>
+                                    <span class="inline-block px-2 py-1 bg-success bg-opacity-20 text-success text-xs rounded-full">Entregado</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Abrigo de Lana Premium" class="w-16 h-16 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg?auto=compress&cs=tinysrgb&w=100&h=100&dpr=2'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <p class="font-medium text-secondary">Abrigo de Lana Premium</p>
+                                    <p class="text-sm text-text-secondary">Talla M, Color Camel</p>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="btn-secondary text-sm px-4 py-2 rounded-md">Reordenar</button>
+                                    <button class="text-accent hover:text-secondary transition-colors duration-300">
+                                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Order 2 -->
+                        <div class="border border-border-light rounded-lg p-4">
+                            <div class="flex items-center justify-between mb-3">
+                                <div>
+                                    <p class="font-medium text-secondary">Pedido #MV-2025-0823</p>
+                                    <p class="text-sm text-text-secondary">25 de julio, 2025</p>
+                                </div>
+                                <div class="text-right">
+                                    <p class="font-semibold text-secondary">€89,00</p>
+                                    <span class="inline-block px-2 py-1 bg-warning bg-opacity-20 text-warning text-xs rounded-full">En tránsito</span>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=100&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Vestido Midi Elegante" class="w-16 h-16 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                                <div class="flex-1">
+                                    <p class="font-medium text-secondary">Vestido Midi Elegante</p>
+                                    <p class="text-sm text-text-secondary">Talla S, Color Negro</p>
+                                </div>
+                                <div class="flex space-x-2">
+                                    <button class="text-accent font-medium hover:text-secondary transition-colors duration-300">Rastrear</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Style Profile -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-heading font-inter font-semibold text-secondary">Mi Perfil de Estilo</h2>
+                        <button class="text-accent font-medium hover:text-secondary transition-colors duration-300">Actualizar</button>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-medium text-secondary mb-3">Preferencias de Estilo</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Estilo Principal</span>
+                                    <span class="font-medium text-secondary">Minimalista Elegante</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Colores Favoritos</span>
+                                    <div class="flex space-x-2">
+                                        <div class="w-4 h-4 bg-black rounded-full"></div>
+                                        <div class="w-4 h-4 bg-accent rounded-full"></div>
+                                        <div class="w-4 h-4 bg-gray-300 rounded-full"></div>
+                                    </div>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Ocasiones</span>
+                                    <span class="font-medium text-secondary">Trabajo, Casual</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h3 class="font-medium text-secondary mb-3">Información de Tallas</h3>
+                            <div class="space-y-2">
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Ropa Superior</span>
+                                    <span class="font-medium text-secondary">M (38)</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Ropa Inferior</span>
+                                    <span class="font-medium text-secondary">M (38)</span>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <span class="text-text-secondary">Calzado</span>
+                                    <span class="font-medium text-secondary">39 EU</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Wishlist Preview -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <div class="flex items-center justify-between mb-6">
+                        <h2 class="text-heading font-inter font-semibold text-secondary">Lista de Deseos</h2>
+                        <a href="javascript:void(0)" class="text-accent font-medium hover:text-secondary transition-colors duration-300">Ver toda (12)</a>
+                    </div>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <!-- Wishlist Item 1 -->
+                        <div class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-3">
+                                <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Jersey de Cashmere" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=2'; this.onerror=null;" />
+                                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button class="bg-white rounded-full p-1 shadow-md">
+                                        <svg class="h-4 w-4 text-error" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-sm font-medium text-secondary">Jersey de Cashmere</p>
+                            <p class="text-sm text-accent font-semibold">€129,00</p>
+                        </div>
+
+                        <!-- Wishlist Item 2 -->
+                        <div class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-3">
+                                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Botas de Cuero Sostenible" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button class="bg-white rounded-full p-1 shadow-md">
+                                        <svg class="h-4 w-4 text-error" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-sm font-medium text-secondary">Botas de Cuero</p>
+                            <p class="text-sm text-accent font-semibold">€159,00</p>
+                        </div>
+
+                        <!-- Wishlist Item 3 -->
+                        <div class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-3">
+                                <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Blazer Estructurado" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=300&h=200&dpr=2'; this.onerror=null;" />
+                                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button class="bg-white rounded-full p-1 shadow-md">
+                                        <svg class="h-4 w-4 text-error" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-sm font-medium text-secondary">Blazer Estructurado</p>
+                            <p class="text-sm text-accent font-semibold">€199,00</p>
+                        </div>
+
+                        <!-- Wishlist Item 4 -->
+                        <div class="group cursor-pointer">
+                            <div class="relative overflow-hidden rounded-lg mb-3">
+                                <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=300&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Falda Midi Plisada" class="w-full h-32 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    <button class="bg-white rounded-full p-1 shadow-md">
+                                        <svg class="h-4 w-4 text-error" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <p class="text-sm font-medium text-secondary">Falda Midi Plisada</p>
+                            <p class="text-sm text-accent font-semibold">€79,00</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Right Column - Sidebar -->
+            <div class="space-y-8">
+                <!-- Loyalty Program -->
+                <section class="bg-gradient-to-br from-accent to-accent bg-opacity-80 rounded-lg p-6 text-secondary">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-8 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                        <h3 class="text-lg font-inter font-semibold">Programa VIP</h3>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Puntos actuales</span>
+                            <span class="font-semibold">1,250</span>
+                        </div>
+                        <div class="w-full bg-secondary bg-opacity-20 rounded-full h-2">
+                            <div class="bg-secondary h-2 rounded-full" style="width: 62.5%"></div>
+                        </div>
+                        <p class="text-sm opacity-90">750 puntos para el siguiente nivel</p>
+                        <button class="w-full bg-secondary text-white py-2 rounded-md font-medium hover:bg-opacity-90 transition-colors duration-300">
+                            Ver Beneficios
+                        </button>
+                    </div>
+                </section>
+
+                <!-- Personal Recommendations -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-4">Recomendado para ti</h3>
+                    <div class="space-y-4">
+                        <!-- Recommendation 1 -->
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Camisa de Lino" class="w-16 h-16 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&dpr=2'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <p class="font-medium text-secondary text-sm">Camisa de Lino Orgánico</p>
+                                <p class="text-accent font-semibold text-sm">€69,00</p>
+                                <p class="text-xs text-text-secondary">Basado en tu estilo</p>
+                            </div>
+                        </div>
+
+                        <!-- Recommendation 2 -->
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1506629905607-d9b1e0b7a7b7?q=80&w=80&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Pantalón Palazzo" class="w-16 h-16 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg'; this.onerror=null;" />
+                            <div class="flex-1">
+                                <p class="font-medium text-secondary text-sm">Pantalón Palazzo</p>
+                                <p class="text-accent font-semibold text-sm">€89,00</p>
+                                <p class="text-xs text-text-secondary">Combina con tu abrigo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="collection_pages.html" class="block text-center text-accent font-medium hover:text-secondary transition-colors duration-300 mt-4">
+                        Ver más recomendaciones
+                    </a>
+                </section>
+
+                <!-- Recent Activity -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-4">Actividad Reciente</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center space-x-3 text-sm">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-text-secondary">Viste 3 productos nuevos</span>
+                            <span class="text-xs text-text-secondary ml-auto">Hoy</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm">
+                            <div class="w-2 h-2 bg-success rounded-full"></div>
+                            <span class="text-text-secondary">Añadiste 2 items a favoritos</span>
+                            <span class="text-xs text-text-secondary ml-auto">Ayer</span>
+                        </div>
+                        <div class="flex items-center space-x-3 text-sm">
+                            <div class="w-2 h-2 bg-warning rounded-full"></div>
+                            <span class="text-text-secondary">Completaste el quiz de estilo</span>
+                            <span class="text-xs text-text-secondary ml-auto">3 días</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Inspiración Personal -->
+                <section class="bg-white rounded-lg shadow-subtle p-6">
+                    <h3 class="text-lg font-inter font-semibold text-secondary mb-4">Inspiración Personal</h3>
+                    <div class="grid grid-cols-2 gap-3">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c0763c65?q=80&w=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Look de inspiración" class="w-full h-20 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=150&auto=format&fit=crop&ixlib=rb-4.0.3" alt="Look de inspiración" class="w-full h-20 object-cover rounded-md" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=150&h=100&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <a href="style_guide_hub.html" class="block text-center text-accent font-medium hover:text-secondary transition-colors duration-300 mt-3">
+                        Ver más inspiración
+                    </a>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-border-light mt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <path d="M10 5h8l6 15 6-15h8L28 35h-6L10 5zm25 0h6v30h-6V5zm15 0h12c6 0 10 4 10 10s-4 10-10 10h-6v10h-6V5zm6 6v8h6c2 0 4-1 4-4s-2-4-4-4h-6zm20-6h20v6H82v6h12v6H82v6h14v6H76V5z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-semibold text-secondary">ModaVibe</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">Moda consciente que refleja tu personalidad única. Calidad excepcional, precios justos, impacto positivo.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-4">Comprar</h3>
+                    <ul class="space-y-2">
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Mujer</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Hombre</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Niños</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Accesorios</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Ofertas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-4">Ayuda</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Contacto</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Guía de tallas</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Envíos y devoluciones</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Cuidado de prendas</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">© 2025 ModaVibe. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Política de privacidad</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Términos de uso</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

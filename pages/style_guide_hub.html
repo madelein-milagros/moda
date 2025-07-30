@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guía de Estilo - ModaVibe</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <meta name="description" content="Descubre consejos de estilo, tendencias y lookbooks en ModaVibe. Tu guía completa para crear outfits perfectos." />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fmodavibe1425back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.6"></script>
+</head>
+<body class="bg-background font-source">
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-subtle sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="flex items-center">
+                        <svg class="h-8 w-auto text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <path d="M10 5h8l6 15 6-15h8L28 35h-6L10 5zm25 0h6v30h-6V5zm15 0h12c6 0 10 4 10 10s-4 10-10 10h-6v10h-6V5zm6 6v8h6c2 0 4-1 4-4s-2-4-4-4h-6zm20-6h20v6H82v6h12v6H82v6h14v6H76V5z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-semibold text-secondary">ModaVibe</span>
+                    </a>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Mujer</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Hombre</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Niños</a>
+                        <a href="collection_pages.html" class="text-text-primary hover:text-accent transition-colors duration-300 font-medium">Accesorios</a>
+                        <a href="style_guide_hub.html" class="text-accent font-medium">Estilo</a>
+                    </div>
+                </div>
+
+                <!-- Right Side Icons -->
+                <div class="flex items-center space-x-4">
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                        </svg>
+                    </button>
+                    <a href="account_dashboard.html" class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/>
+                        </svg>
+                    </a>
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </button>
+                    <a href="checkout_experience.html" class="text-text-primary hover:text-accent transition-colors duration-300 relative">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                        </svg>
+                        <span class="absolute -top-2 -right-2 bg-accent text-secondary text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button class="text-text-primary hover:text-accent transition-colors duration-300">
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-primary py-16 overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <svg class="w-full h-full" viewBox="0 0 1200 600" fill="none">
+                <path d="M0 300C200 200 400 400 600 300C800 200 1000 400 1200 300V600H0V300Z" fill="currentColor"/>
+            </svg>
+        </div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-hero font-inter font-semibold text-secondary mb-6">Guía de Estilo ModaVibe</h1>
+            <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">Descubre tu estilo personal con nuestros consejos expertos, tendencias actuales y lookbooks inspiradores. Tu viaje hacia un guardarropa perfecto comienza aquí.</p>
+            
+            <!-- Search Bar -->
+            <div class="max-w-md mx-auto relative">
+                <input type="text" placeholder="Buscar consejos, tendencias, looks..." class="w-full px-4 py-3 pl-12 rounded-lg border border-border-light focus:outline-none focus:border-accent transition-colors duration-300" />
+                <svg class="absolute left-4 top-1/2 transform -translate-y-1/2 h-5 w-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Navigation -->
+    <section class="bg-white border-b border-border-light sticky top-16 z-40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between py-4">
+                <div class="flex items-center space-x-8 overflow-x-auto">
+                    <button class="text-accent font-medium border-b-2 border-accent pb-2 whitespace-nowrap">Todo</button>
+                    <button class="text-text-secondary hover:text-accent transition-colors duration-300 pb-2 whitespace-nowrap">Lookbooks</button>
+                    <button class="text-text-secondary hover:text-accent transition-colors duration-300 pb-2 whitespace-nowrap">Tendencias</button>
+                    <button class="text-text-secondary hover:text-accent transition-colors duration-300 pb-2 whitespace-nowrap">Consejos</button>
+                    <button class="text-text-secondary hover:text-accent transition-colors duration-300 pb-2 whitespace-nowrap">Sostenibilidad</button>
+                    <button class="text-text-secondary hover:text-accent transition-colors duration-300 pb-2 whitespace-nowrap">Comunidad</button>
+                </div>
+                <button class="flex items-center text-text-secondary hover:text-accent transition-colors duration-300">
+                    <svg class="h-5 w-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.707A1 1 0 013 7V4z"/>
+                    </svg>
+                    Filtros
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Lookbook -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Lookbook Otoño 2025" class="w-full h-96 lg:h-128 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                    <div class="absolute top-4 left-4 bg-accent text-secondary px-3 py-1 rounded-full text-sm font-medium">
+                        Nuevo
+                    </div>
+                </div>
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-accent font-medium text-sm uppercase tracking-wide">Lookbook Destacado</span>
+                        <h2 class="text-display font-inter font-semibold text-secondary mt-2 mb-4">Elegancia Otoñal 2025</h2>
+                        <p class="text-lg text-text-secondary mb-6">Descubre cómo combinar las piezas esenciales de la temporada para crear looks sofisticados y versátiles. Desde el office chic hasta el casual weekend, encuentra tu estilo perfecto.</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-primary">15 looks completos para la temporada</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-primary">Consejos de styling profesional</span>
+                        </div>
+                        <div class="flex items-center">
+                            <svg class="h-5 w-5 text-accent mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                            </svg>
+                            <span class="text-text-primary">Piezas disponibles en ModaVibe</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn-primary rounded-md">Ver Lookbook Completo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trending Topics -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-display font-inter font-semibold text-secondary mb-4">Tendencias Actuales</h2>
+                <p class="text-lg text-text-secondary">Lo que está marcando la moda este mes</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Trend 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-subtle group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Colores Tierra" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 right-4 bg-warning text-white px-2 py-1 rounded-full text-xs font-medium">
+                            Trending
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-accent text-sm font-medium uppercase tracking-wide">Tendencia</span>
+                        <h3 class="font-inter font-semibold text-lg text-secondary mt-2 mb-3 group-hover:text-accent transition-colors duration-300">Paleta de Colores Tierra</h3>
+                        <p class="text-text-secondary mb-4">Los tonos cálidos y naturales dominan esta temporada. Aprende a incorporar beiges, marrones y ocres en tu guardarropa.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">5 min de lectura</span>
+                            <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Trend 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-subtle group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1434389677669-e08b4cac3105?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Layering Inteligente" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-success text-sm font-medium uppercase tracking-wide">Técnica</span>
+                        <h3 class="font-inter font-semibold text-lg text-secondary mt-2 mb-3 group-hover:text-accent transition-colors duration-300">Layering Inteligente</h3>
+                        <p class="text-text-secondary mb-4">Domina el arte de las capas para crear outfits versátiles que se adapten a cualquier temperatura y ocasión.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">7 min de lectura</span>
+                            <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Trend 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-subtle group cursor-pointer">
+                    <div class="relative overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Accesorios Statement" class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/07/31/11/22/people-2557396_1280.jpg'; this.onerror=null;" />
+                    </div>
+                    <div class="p-6">
+                        <span class="text-warning text-sm font-medium uppercase tracking-wide">Accesorios</span>
+                        <h3 class="font-inter font-semibold text-lg text-secondary mt-2 mb-3 group-hover:text-accent transition-colors duration-300">Accesorios Statement</h3>
+                        <p class="text-text-secondary mb-4">Transforma looks básicos con accesorios llamativos. Descubre cómo elegir y combinar piezas que marquen la diferencia.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">4 min de lectura</span>
+                            <svg class="h-5 w-5 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Style Guide -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-display font-inter font-semibold text-secondary mb-4">Guía Interactiva de Estilo</h2>
+                <p class="text-lg text-text-secondary">Encuentra looks perfectos para cada ocasión</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-accent text-secondary px-6 py-2 rounded-full font-medium transition-all duration-300">Oficina</button>
+                <button class="bg-surface text-text-primary px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-secondary transition-all duration-300">Casual</button>
+                <button class="bg-surface text-text-primary px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-secondary transition-all duration-300">Noche</button>
+                <button class="bg-surface text-text-primary px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-secondary transition-all duration-300">Weekend</button>
+                <button class="bg-surface text-text-primary px-6 py-2 rounded-full font-medium hover:bg-accent hover:text-secondary transition-all duration-300">Eventos</button>
+            </div>
+
+            <!-- Style Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Style Card 1 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Look Oficina Elegante" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-inter font-semibold mb-1">Elegancia Profesional</h4>
+                            <p class="text-sm">Blazer + Pantalón + Blusa</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">3 piezas</span>
+                        <button class="text-accent hover:text-secondary transition-colors duration-300">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Style Card 2 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Look Business Casual" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-inter font-semibold mb-1">Business Casual</h4>
+                            <p class="text-sm">Camisa + Chinos + Zapatos</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">3 piezas</span>
+                        <button class="text-accent hover:text-secondary transition-colors duration-300">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Style Card 3 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Look Reunión Importante" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-inter font-semibold mb-1">Reunión Ejecutiva</h4>
+                            <p class="text-sm">Traje + Blusa + Accesorios</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">4 piezas</span>
+                        <button class="text-accent hover:text-secondary transition-colors duration-300">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Style Card 4 -->
+                <div class="group cursor-pointer">
+                    <div class="relative overflow-hidden rounded-lg mb-4">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Look Oficina Moderna" class="w-full h-80 object-cover group-hover:scale-105 transition-transform duration-300" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                        <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <h4 class="font-inter font-semibold mb-1">Oficina Moderna</h4>
+                            <p class="text-sm">Vestido + Blazer + Sneakers</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-text-secondary">3 piezas</span>
+                        <button class="text-accent hover:text-secondary transition-colors duration-300">
+                            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <button class="btn-secondary rounded-md">Ver Más Looks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Style Gallery -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-display font-inter font-semibold text-secondary mb-4">Galería de Estilo</h2>
+                <p class="text-lg text-text-secondary">Cómo nuestros clientes llevan ModaVibe</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Customer Story 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-subtle">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616c0763c65?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="María - Estilo Minimalista" class="w-full h-64 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2016/11/29/13/14/attractive-1869761_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-1 rounded-full">
+                            <span class="text-secondary text-sm font-medium">@maria_minimal</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-inter font-semibold text-lg text-secondary mb-2">María, 32 años</h3>
+                        <p class="text-text-secondary mb-4">"ModaVibe me ayudó a crear un armario cápsula perfecto. Ahora me visto con confianza todos los días sin perder tiempo decidiendo qué ponerme."</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-accent text-sm font-medium">Estilo: Minimalista</span>
+                            <div class="flex space-x-2">
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Story 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-subtle">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Carlos - Estilo Urbano" class="w-full h-64 object-cover" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-1 rounded-full">
+                            <span class="text-secondary text-sm font-medium">@carlos_urban</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-inter font-semibold text-lg text-secondary mb-2">Carlos, 28 años</h3>
+                        <p class="text-text-secondary mb-4">"La calidad de las prendas es excepcional y el estilo es exactamente lo que buscaba. Perfecto para mi trabajo en una startup."</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-success text-sm font-medium">Estilo: Urbano</span>
+                            <div class="flex space-x-2">
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Customer Story 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-subtle">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Ana - Estilo Elegante" class="w-full h-64 object-cover" loading="lazy" onerror="this.src='https://images.pixabay.com/photo/2017/08/01/11/48/woman-2564660_1280.jpg'; this.onerror=null;" />
+                        <div class="absolute top-4 left-4 bg-white bg-opacity-90 px-3 py-1 rounded-full">
+                            <span class="text-secondary text-sm font-medium">@ana_chic</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-inter font-semibold text-lg text-secondary mb-2">Ana, 35 años</h3>
+                        <p class="text-text-secondary mb-4">"Encontré piezas perfectas para mi trabajo como consultora. La versatilidad de las prendas me permite crear múltiples looks."</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-warning text-sm font-medium">Estilo: Elegante</span>
+                            <div class="flex space-x-2">
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                                    </svg>
+                                </button>
+                                <button class="text-text-secondary hover:text-accent transition-colors duration-300">
+                                    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.367 2.684 3 3 0 00-5.367-2.684z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-8">
+                <p class="text-text-secondary mb-4">¿Quieres aparecer en nuestra galería?</p>
+                <button class="btn-primary rounded-md">Comparte tu Estilo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability Stories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-display font-inter font-semibold text-secondary mb-4">Moda Consciente</h2>
+                <p class="text-lg text-text-secondary">Nuestro compromiso con la sostenibilidad</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <!-- Sustainability Point 1 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-success rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-lg text-secondary mb-2">Materiales Orgánicos</h3>
+                            <p class="text-text-secondary">El 80% de nuestras prendas están confeccionadas con algodón orgánico certificado GOTS, reduciendo el impacto ambiental en un 91%.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sustainability Point 2 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-success rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-lg text-secondary mb-2">Economía Circular</h3>
+                            <p class="text-text-secondary">Programa de reciclaje donde puedes devolver prendas usadas a cambio de descuentos. Cada prenda reciclada evita 2.3kg de CO2.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sustainability Point 3 -->
+                    <div class="flex items-start space-x-4">
+                        <div class="flex-shrink-0 w-12 h-12 bg-success rounded-full flex items-center justify-center">
+                            <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-inter font-semibold text-lg text-secondary mb-2">Comercio Justo</h3>
+                            <p class="text-text-secondary">Trabajamos directamente con talleres certificados que garantizan condiciones laborales justas y salarios dignos para todos los trabajadores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Sostenibilidad ModaVibe" class="w-full h-96 object-cover rounded-lg" loading="lazy" onerror="this.src='https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg?auto=compress&cs=tinysrgb&w=2940&h=1960&dpr=2'; this.onerror=null;" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-lg"></div>
+                    <div class="absolute bottom-6 left-6 text-white">
+                        <h4 class="font-inter font-semibold text-xl mb-2">Impacto Positivo</h4>
+                        <p class="text-sm opacity-90">Cada compra contribuye a un futuro más sostenible</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Style Tips Section -->
+    <section class="py-16 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-display font-inter font-semibold text-secondary mb-4">Consejos de Estilo</h2>
+                <p class="text-lg text-text-secondary">Tips profesionales para elevar tu guardarropa</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tip 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-subtle">
+                    <div class="w-12 h-12 bg-accent rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-3">Regla del 80/20</h3>
+                    <p class="text-text-secondary">Invierte el 80% de tu presupuesto en piezas básicas atemporales y el 20% en tendencias. Así tendrás un guardarropa versátil y duradero.</p>
+                </div>
+
+                <!-- Tip 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-subtle">
+                    <div class="w-12 h-12 bg-success rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3H5a2 2 0 00-2 2v12a4 4 0 004 4h2M9 3h2a2 2 0 012 2v12a4 4 0 01-4 4H7m2-16v16"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-3">Paleta de Colores</h3>
+                    <p class="text-text-secondary">Elige 3-4 colores base que combinen entre sí. Esto te permitirá crear múltiples outfits con menos prendas y siempre lucir coordinada.</p>
+                </div>
+
+                <!-- Tip 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-subtle">
+                    <div class="w-12 h-12 bg-warning rounded-full flex items-center justify-center mb-4">
+                        <svg class="h-6 w-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-3">Fit Perfecto</h3>
+                    <p class="text-text-secondary">Una prenda básica con el fit perfecto siempre se verá mejor que una prenda cara que no te quede bien. Invierte en ajustes si es necesario.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-display font-inter font-semibold mb-4">Mantente al día con las tendencias</h2>
+            <p class="text-xl mb-8 opacity-90">Recibe consejos de estilo, lookbooks exclusivos y las últimas tendencias directamente en tu email</p>
+            
+            <form class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                <input type="email" placeholder="Tu email" class="flex-1 px-4 py-3 rounded-md text-secondary focus:outline-none focus:ring-2 focus:ring-accent" />
+                <button type="submit" class="bg-accent text-secondary px-6 py-3 rounded-md font-inter font-medium hover:bg-opacity-90 transition-all duration-300">
+                    Suscribirse
+                </button>
+            </form>
+            
+            <p class="text-sm opacity-70 mt-4">Al suscribirte, aceptas recibir emails de ModaVibe. Puedes darte de baja en cualquier momento.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-border-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- Company Info -->
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center mb-4">
+                        <svg class="h-8 w-auto text-secondary" viewBox="0 0 120 40" fill="currentColor">
+                            <path d="M10 5h8l6 15 6-15h8L28 35h-6L10 5zm25 0h6v30h-6V5zm15 0h12c6 0 10 4 10 10s-4 10-10 10h-6v10h-6V5zm6 6v8h6c2 0 4-1 4-4s-2-4-4-4h-6zm20-6h20v6H82v6h12v6H82v6h14v6H76V5z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-semibold text-secondary">ModaVibe</span>
+                    </div>
+                    <p class="text-text-secondary mb-4 max-w-md">Moda consciente que refleja tu personalidad única. Calidad excepcional, precios justos, impacto positivo.</p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001 12.017.001z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-4">Comprar</h3>
+                    <ul class="space-y-2">
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Mujer</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Hombre</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Niños</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Accesorios</a></li>
+                        <li><a href="collection_pages.html" class="text-text-secondary hover:text-accent transition-colors duration-300">Ofertas</a></li>
+                    </ul>
+                </div>
+
+                <!-- Customer Service -->
+                <div>
+                    <h3 class="font-inter font-semibold text-lg text-secondary mb-4">Ayuda</h3>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Contacto</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Guía de tallas</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Envíos y devoluciones</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">Cuidado de prendas</a></li>
+                        <li><a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-border-light mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-text-secondary text-sm">© 2025 ModaVibe. Todos los derechos reservados.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Política de privacidad</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Términos de uso</a>
+                    <a href="javascript:void(0)" class="text-text-secondary hover:text-accent transition-colors duration-300 text-sm">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
